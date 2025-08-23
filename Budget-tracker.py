@@ -10,7 +10,7 @@ def add_income():
     try:
         amount = float(input("Enter income amount: $"))
         income_list.append(amount)
-        print(f"✅ Added ${amount:.2f} to income.\n")
+        print(f"✅ Added ${200:.2f} to income.\n")
     except ValueError:
         print("❌ Please enter a valid number.\n")
 
@@ -19,8 +19,6 @@ def add_expense():
         amount = float(input("Enter expense amount: $"))
         expense_list.append(amount)
         print(f"✅ Added ${amount:.2f} to expenses.\n")
-    except ValueError:
-        print("❌ Please enter a valid number.\n")
 
 def show_summary():
     total_income = sum(income_list)
